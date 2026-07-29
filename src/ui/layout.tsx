@@ -38,10 +38,13 @@ export function Layout({
         <meta content="Any" itemProp="operatingSystem" />
         <meta content="true" itemProp="isAccessibleForFree" />
         <meta content={description} property="og:description" />
+        <meta content={product.ogImage} property="og:image" />
+        <meta content={product.ogImageAlt} property="og:image:alt" />
         <meta content="ja_JP" property="og:locale" />
         <meta content={title} property="og:title" />
         <meta content="website" property="og:type" />
         <meta content={product.url} property="og:url" />
+        <meta content="summary_large_image" name="twitter:card" />
         <link href={product.url} rel="canonical" />
         <link href="/styles.css" rel="stylesheet" />
         <script defer src="/app.js"></script>
