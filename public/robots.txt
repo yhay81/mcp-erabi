@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /internal/
+Disallow: /healthz
+
+Sitemap: https://mcp-erabi.yhay81.com/sitemap.xml

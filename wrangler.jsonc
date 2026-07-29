@@ -1,0 +1,42 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mcp-erabi",
+  "main": "src/worker.tsx",
+  "compatibility_date": "2026-07-26",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "mcp-erabi.yhay81.com",
+      "custom_domain": true,
+    },
+  ],
+  "observability": {
+    "enabled": true,
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mcp-erabi",
+      "database_id": "83abe798-8bc6-43ee-b12d-dc42d000e104",
+      "migrations_dir": "migrations",
+    },
+  ],
+  "ratelimits": [
+    {
+      "name": "EVENT_LIMITER",
+      "namespace_id": "30072931",
+      "simple": {
+        "limit": 40,
+        "period": 60,
+      },
+    },
+  ],
+  "triggers": {
+    "crons": ["7 * * * *"],
+  },
+}
