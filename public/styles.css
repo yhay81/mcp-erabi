@@ -1,12 +1,6 @@
 :root {
   color-scheme: light;
-  font-family:
-    Inter,
-    "Noto Sans JP",
-    "Yu Gothic UI",
-    system-ui,
-    -apple-system,
-    sans-serif;
+  font-family: Inter, "Noto Sans JP", "Yu Gothic UI", system-ui, -apple-system, sans-serif;
   color: #17202f;
   background: #f2f1ed;
   font-synthesis: none;
